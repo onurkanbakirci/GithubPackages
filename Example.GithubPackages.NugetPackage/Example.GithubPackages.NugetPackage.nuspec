@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+	<metadata>
+
+		<!-- Identifier that must be unique within the hosting gallery -->
+		<id>Example.GithubPackages.NugetPackage</id>
+
+		<!-- Package version number that is used when resolving dependencies -->
+		<version>1.0.0</version>
+
+		<title>Example</title>
+
+		<!-- Icon is used in Visual Studio's package manager UI -->
+		<icon>images\placeholder.png</icon>
+
+		<!-- Authors contain text that appears directly on the gallery -->
+		<authors>Onurkan Bakirci</authors>
+
+		<!-- Project URL provides a link for the gallery -->
+		<projectUrl>http://github.com/onurkanbakirci/GithubPackages</projectUrl>
+
+		<!-- License information is displayed on the gallery -->
+		<license type="expression">MIT</license>
+
+		<!-- 
+            If true, this value prompts the user to accept the license when
+            installing the package. 
+        -->
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+		<!-- 
+            Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.  
+        -->
+		<owners>onurkanbakirci</owners>
+		
+		<!-- 
+            The description can be used in package manager UI. Note that the
+            nuget.org gallery uses information you add in the portal. 
+        -->
+		<description>Summary of changes made in this release of the package.</description>
+
+		<!-- Any details about this particular release -->
+		<releaseNotes>In this package release, we added SayHi functionality to Human class.</releaseNotes>
+
+		<!-- Copyright information -->
+		<copyright>onurkanbakirci</copyright>
+
+		<repository type="git" url="https://github.com/onurkanbakirci/GithubPackages" />
+
+		<!-- Tags appear in the gallery and can be used for tag searches -->
+		<tags>onurkanbakirci, medium</tags>
+
+		<!-- Dependencies are automatically installed when the package is installed -->
+		<!-- <dependencies> -->
+		<!--	<dependency id="Newtonsoft.Json" version="9.0" /> -->
+		<!-- </dependencies> -->
+
+	</metadata>
+	<files>
+		<file src="..\..\placeholder.png" target="images\" />
+		<file src="bin\Debug\net6.0\*.dll" target="lib" />
+	</files>
+</package>
